@@ -1,0 +1,15 @@
+<h1>New Test</h1>
+
+<%= form_tag(tests_path, remote: true) do %>
+  <div>
+    <%= label_tag('goods') %>
+    <%= text_field_tag('goods[]', 'foobar') %>
+  </div>
+
+  <fieldset>
+    <%= label_tag('bads') %>
+    <%= text_field_tag('bads[]', 'foobar') %>
+  </fieldset>
+
+  <%= submit_tag %>
+<% end %>
